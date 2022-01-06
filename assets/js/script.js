@@ -1,23 +1,15 @@
-var submitButton = document.getElementById('btn-submit');
+var form = document.getElementById('inputForm');
 var inputDest = document.getElementById('loc-to');
 var inputFrom = document.getElementById('loc-from');
 
 
+form.addEventListener('submit', (event) => {
+    event.preventDefault();  // prevents automatic refresh
+    
+    
 
-submitButton.addEventListener('submit', start());
-
-function start() {
-
-    var from = inputFrom.value;
-    var gikan = inputDest.innerText;
-    var to = inputDest.value;
-
-    console.log('Button had been clicked');
-
-    if (from) {
-        console.log('if From is not empty');
-    }
-
-
-
-}
+    var Destination = inputDest.value;
+    var Origin = inputFrom.value;
+    console.log(Destination);
+    
+  });
