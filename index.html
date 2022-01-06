@@ -12,26 +12,30 @@
 </head>
 
 <body>
-    <main class="container is-mobile">
-        <div class="container is-info is-align-content-center show-border">
+    <main class="container is-vertical">
+        <div class="container notification is-info show-border my-header">
             <h1 class="title is-1 is-primary"> Travel Planner </h1>
         </div>
 
-        <div class="container is-mobile columns">
+        <div class="container columns">
 
             <section id="user-interface" class="container column">
                 <form class="box">
                     <div class="field">
-                        <label class="label">Destination: </label>
-                        <div class="control">
-                            <input id="loc-to" class="input" type="text" placeholder="Melbourne">
-                        </div>
                         <label class="label">From: </label>
                         <div class="control">
-                            <input id="loc-from" class="input" type="text" placeholder="Sydney">
+                            <input id="loc-from" class="input is-info" type="text" placeholder="Melbourne">
                         </div>
                     </div>
-                    <button class="button is-primary">Search</button>
+                    <div class="field">
+                        <label class="label">Destination: </label>
+                        <div class="control">
+                            <input id="loc-to" class="input is-info" type="text" placeholder="Sydney">
+                            
+                        </div>
+
+                    </div>
+                    <input id="btn-submit" type="submit" value="Submit" class="button is-info is-fullwidth">                   
                 </form>
             </section>
 
