@@ -3,6 +3,9 @@ var inputDest = document.getElementById('loc-to');
 var inputFrom = document.getElementById('loc-from');
 
 
+var locToInput = document.getElementById("loc-to")
+console.log(locToInput.value) //gives a string of whatever's typed into that input field
+
 
 submitButton.addEventListener('submit', start());
 
