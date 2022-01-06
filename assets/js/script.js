@@ -4,7 +4,12 @@ var inputFrom = document.getElementById('loc-from');
 
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    console.log("thanks you submitted");
+    event.preventDefault();  // prevents automatic refresh
+    
+    
+
+    var Destination = inputDest.value;
+    var Origin = inputFrom.value;
+    console.log(Destination);
     
   });
